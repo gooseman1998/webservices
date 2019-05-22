@@ -1,0 +1,12 @@
+.container {
+	width: 300px;
+}
+
+#schermpje {
+	width: 100%;
+}
+
+.col-sm-3 {
+	padding: 25px;
+	background-color: #f1f1f1;
+}

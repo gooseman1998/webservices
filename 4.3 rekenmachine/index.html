@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link href="css/bootstrap3.3.7.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Rekenmachine</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<input type="text" name="scherm" id="schermpje" readonly>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 btn" onclick="addNum('7')">7</div>
+    		<div class="col-sm-3 btn" onclick="addNum('8')">8</div>
+    		<div class="col-sm-3 btn" onclick="addNum('9')">9</div>
+    		<div class="col-sm-3 btn" onclick="addOpp('/')">/</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3 btn" onclick="addNum('4')">4</div>
+    		<div class="col-sm-3 btn" onclick="addNum('5')">5</div>
+    		<div class="col-sm-3 btn" onclick="addNum('6')">6</div>
+    		<div class="col-sm-3 btn" onclick="addOpp('*')">x</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-sm-3 btn" onclick="addNum('1')">1</div>
+    		<div class="col-sm-3 btn" onclick="addNum('2')">2</div>
+    		<div class="col-sm-3 btn" onclick="addNum('3')">3</div>
+    		<div class="col-sm-3 btn" onclick="addOpp('-')">-</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3 btn" onclick="addNum('0')">0</div>
+    		<div class="col-sm-3 btn" onclick="addNum('.')">.</div>
+    		<div class="col-sm-3 btn" onclick="calc()">=</div>
+    		<div class="col-sm-3 btn" onclick="addOpp('+')">+</div>
+		</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap3.3.7.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
