@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet" >
+    <meta name="viewport" content="width=-width, initial-scale=1 maximum-scale=1">
+</head>
+<body>
+    <div id="frame">
+
+        <div id="myLocation">
+            <h1>Mijn locatie</h1>
+
+            <label>Landcode: <span id="lCode"></span></label><br>
+            <label>Land: <span id="land"></span></label><br>
+            <label>Regio: <span id="regioo"></span></label><br>
+            <label>Stad: <span id="stad"></span></label><br>
+            <label>Postcode: <span id="post"></span></label><br>
+            <label>Latiude: <span id="lat"></span></label><br>
+            <label>Longtiude: <span id="long"></span></label><br>
+            <label>IP: <span id="ip"></span></label><br><br>
+        </div>
+
+
+        <div id="weatherInfo">
+            <h1>Het weer in <span id="stad2"></span></h1>
+
+            <label>Temperatuur:<span  id="temp"></span></label><br>
+            <label>Luchtvochtigheid:<span  id="lv"></span></label><br>
+            <label>Windsnelheid:<span  id="ws"></span></label><br>
+            <label>Windrichting:<span  id="wr"></span></label><br>
+            <label>Zonsopgang:<span  id="zop"></span></label><br>
+            <label>Zonsondergang:<span id="zon"></span> </label><br><br>
+        </div>
+
+        <div id="modal" style="display:none">
+            <form id="updateform">
+                <div >
+                    <label >code</label>
+                    <input type="text" id="code" name="code">
+                </div>
+                <div >
+                    <label >Land</label>
+                    <input type="text" id="country" name="country">
+                </div>
+
+                <div >
+                    <label >Hoofdstad</label>
+                    <input type="text" id="capital" name="capital">
+                </div>
+
+                <div >
+                    <label >Regio</label>
+                    <input type="text" id="region" name="region">
+                </div>
+
+                <div >
+                    <label >Oppervlakte</label>
+                    <input type="text" id="surface" name="surface">
+                </div>
+
+                <div >
+                    <label >Inwoners</label>
+                    <input type="text" id="population" name="population">
+                </div>
+                <div >
+                    <button type="button" name="submitb" onclick="update()">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div id="modal2" style="display:block">
+            Save form
+            <form id="insertform">
+                <div >
+                    <label >code</label>
+                    <input type="text" id="code2" name="code">
+                </div>
+                <div >
+                    <label >Land</label>
+                    <input type="text" id="country2" name="country">
+                </div>
+
+                <div >
+                    <label >Hoofdstad</label>
+                    <input type="text" id="capital2" name="capital">
+                </div>
+
+                <div >
+                    <label >Regio</label>
+                    <input type="text" id="region2" name="region">
+                </div>
+
+                <div >
+                    <label >Oppervlakte</label>
+                    <input type="text" id="surface2" name="surface">
+                </div>
+
+                <div >
+                    <label >Inwoners</label>
+                    <input type="text" id="population2" name="population">
+                </div>
+                <div >
+                    <button type="button" name="submitb2" onclick="save()">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="countryList" style="overflow-x:auto;">
+            <h1>Beschikbare vakantie bestemmingen</h1>
+
+            <table>
+                <thead>
+                    <th>Land</th>
+                    <th>Hoofdstad</th>
+                    <th>Regio</th>
+                    <th>Oppervlakte</th>
+                    <th>Inwoners</th>
+                </thead>
+                <tbody id="vakanties"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

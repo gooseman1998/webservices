@@ -1,0 +1,74 @@
+html {
+    background: #dcdcff;
+    min-width: 400px;
+}
+
+h1 {
+    background-color: #afafff;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#myLocation,
+#weatherInfo,
+#countryList,
+#updateform{
+    background-color: #afafff;
+}
+
+#countryList {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    #myLocation,
+    #weatherInfo {
+        float: left;
+        width: 50%;
+        height: 280px;
+    }
+}
+
+
+/*@media (min-width: 700px) {*/
+
+/*    #frame {*/
+/*        display: grid;*/
+/*        grid-template-rows: 1fr 10fr;*/
+/*        grid-template-columns: 1fr 1fr 1fr;*/
+/*    }*/
+
+/*    #countryList {*/
+/*        grid-column: 1/4;*/
+/*        grid-row: 2;*/
+/*    }*/
+
+/*    #myLocation {*/
+/*        grid-column: 1;*/
+/*        grid-row: 1;*/
+/*    }*/
+
+/*    #middleSection {*/
+/*        grid-column: 2;*/
+/*        grid-row: 1;*/
+/*    }*/
+
+/*    #weatherInfo {*/
+/*        grid-column: 3;*/
+/*        grid-row: 1;*/
+/*    }*/
+
+/*}*/
